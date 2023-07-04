@@ -28,7 +28,7 @@ async def start(client, message):
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.PRIVATEBOT_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
-        await asyncio.sleep(2) # 😢 https://github.com/8769ANURAG/Anurag-Extra-Features/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
+        await asyncio.sleep(2) # 😢 https://github.com/yourdilip/Anurag-Extra-Features/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
@@ -43,18 +43,12 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔥 SΞΛᏒCH HΞᏒΞ 🔥', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MOVIES_ZILAA'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/sources_cods')
-            ],[
-            InlineKeyboardButton('🔥 LIИK GΞИΞᏒΛTOᏒ 🔥', url='http://t.me/FileTo_Link_RoBot')
+            InlineKeyboardButton('💠 𝕯𝖆𝖎𝖑𝛄 𝕾𝖊𝖆𝖗𝖎𝖆𝖑 💠', url='https://t.me/Radhakrishn_New_Episodes2022'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/Entertainment_official_channel')
+            ],
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-            ],[
-            InlineKeyboardButton('👑 ᖴᗩCΞᗷOOK 👑', url='https://www.facebook.com/anurag.maheswari.925'),
-            InlineKeyboardButton('🥇 IИSTΛGᏒΛM 🥇', url='https://www.instagram.com/anuragmaheshwari_official')
-            ],[
-            InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCqts9WhhlioK3RB9XQQzoAg')
         ]]         
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -82,7 +76,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**",
+            text="**𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -93,18 +87,12 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔥 SΞΛᏒCH HΞᏒΞ 🔥', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MOVIES_ZILAA'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/sources_cods')
-            ],[
-            InlineKeyboardButton('🔥 LIИK GΞИΞᏒΛTOᏒ 🔥', url='http://t.me/FileTo_Link_RoBot')
-            ],[
+            InlineKeyboardButton('💠 𝕯𝖆𝖎𝖑𝛄 𝕾𝖊𝖆𝖗𝖎𝖆𝖑 💠', url='https://t.me/Radhakrishn_New_Episodes2022'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/Entertainment_official_channel')
+        ]
+      ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-            ],[
-            InlineKeyboardButton('👑 ᖴᗩCΞᗷOOK 👑', url='https://www.facebook.com/anurag.maheswari.925'),
-            InlineKeyboardButton('🥇 IИSTΛGᏒΛM 🥇', url='https://www.instagram.com/anuragmaheshwari_official')
-            ],[
-            InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCqts9WhhlioK3RB9XQQzoAg')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
